@@ -40,7 +40,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
+    func applicationDidFinishLaunching(_ application: UIApplication) {
+        Parse.setApplicationId("HU35CHA4t0ebOb7AwQR3l8XmqE82oKC8QfoHu2Ed", clientKey: "N84KATdzjuYIln0zKB1k3dDpcrl0Ev0BxRJSDtf1")
+        
+        let object = PFObject(className: "TestClass")
+        object.add("Banana", forKey: "favoriteFood")
+        object.add("Chocolate", forKey: "favoriteIceCream")
+        object.saveInBackground()
+    }
 
 }
 
