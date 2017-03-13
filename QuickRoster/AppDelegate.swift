@@ -49,5 +49,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         object.add("Chocolate", forKey: "favoriteIceCream")
         object.saveInBackground()
     }
-   }
+
+}
 

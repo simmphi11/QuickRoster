@@ -16,6 +16,8 @@
 		55065BA21E723BCA00F3355A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55065BA11E723BCA00F3355A /* Security.framework */; };
 		55065BA41E723BD900F3355A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55065BA31E723BD900F3355A /* StoreKit.framework */; };
 		55065BA61E723BE700F3355A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55065BA51E723BE700F3355A /* SystemConfiguration.framework */; };
+		55065BA71E723D3900F3355A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 55065B991E723A1100F3355A /* libz.tbd */; };
+		55065BA81E723D4200F3355A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 55065B9B1E723A2600F3355A /* libsqlite3.tbd */; };
 		55065BAA1E723EC100F3355A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55065BA91E723EC100F3355A /* Parse.framework */; };
 		55065BB01E72424700F3355A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55065BAF1E72424700F3355A /* Bolts.framework */; };
 		554224771E6F8594003498C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554224761E6F8594003498C6 /* AppDelegate.swift */; };
@@ -29,8 +31,8 @@
 		554224A81E701187003498C6 /* ShiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554224A71E701187003498C6 /* ShiftViewController.swift */; };
 		554224AA1E7013B9003498C6 /* StaffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554224A91E7013B9003498C6 /* StaffViewController.swift */; };
 		554224AC1E701722003498C6 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554224AB1E701722003498C6 /* StatisticsViewController.swift */; };
+		554224AE1E701925003498C6 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554224AD1E701925003498C6 /* NoticeViewController.swift */; };
 		554224B01E701C6D003498C6 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554224AF1E701C6D003498C6 /* AccountViewController.swift */; };
-		55BDC46A1E7653F400FFDA24 /* QuickRoster.app in Resources */ = {isa = PBXBuildFile; fileRef = 554224731E6F8594003498C6 /* QuickRoster.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		55065B931E72395C00F3355A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		55065B951E72396C00F3355A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		55065B971E72397300F3355A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		55065B991E723A1100F3355A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		55065B9B1E723A2600F3355A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		55065B9D1E723BA900F3355A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		55065B9F1E723BB900F3355A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		55065BA11E723BCA00F3355A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -69,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55065BA81E723D4200F3355A /* libsqlite3.tbd in Frameworks */,
+				55065BA71E723D3900F3355A /* libz.tbd in Frameworks */,
 				55065BA61E723BE700F3355A /* SystemConfiguration.framework in Frameworks */,
 				55065BA41E723BD900F3355A /* StoreKit.framework in Frameworks */,
 				55065BA21E723BCA00F3355A /* Security.framework in Frameworks */,
@@ -94,6 +100,8 @@
 				55065BA11E723BCA00F3355A /* Security.framework */,
 				55065B9F1E723BB900F3355A /* QuartzCore.framework */,
 				55065B9D1E723BA900F3355A /* MobileCoreServices.framework */,
+				55065B9B1E723A2600F3355A /* libsqlite3.tbd */,
+				55065B991E723A1100F3355A /* libz.tbd */,
 				55065B971E72397300F3355A /* CoreLocation.framework */,
 				55065B951E72396C00F3355A /* CoreGraphics.framework */,
 				55065B931E72395C00F3355A /* CFNetwork.framework */,
@@ -207,7 +215,6 @@
 			files = (
 				554224811E6F8594003498C6 /* LaunchScreen.storyboard in Resources */,
 				5542247E1E6F8594003498C6 /* Assets.xcassets in Resources */,
-				55BDC46A1E7653F400FFDA24 /* QuickRoster.app in Resources */,
 				5542247C1E6F8594003498C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,6 +234,7 @@
 				5542249C1E6F9186003498C6 /* MenuViewController.swift in Sources */,
 				554224B01E701C6D003498C6 /* AccountViewController.swift in Sources */,
 				554224AC1E701722003498C6 /* StatisticsViewController.swift in Sources */,
+				554224AE1E701925003498C6 /* NoticeViewController.swift in Sources */,
 				5542249E1E6F91BF003498C6 /* MenuTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,10 +364,6 @@
 				);
 				INFOPLIST_FILE = QuickRoster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.SDev.QuickRoster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "QuickRoster/QuickRoster-Bridging-Header.h";
@@ -380,10 +384,6 @@
 				);
 				INFOPLIST_FILE = QuickRoster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.SDev.QuickRoster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "QuickRoster/QuickRoster-Bridging-Header.h";
