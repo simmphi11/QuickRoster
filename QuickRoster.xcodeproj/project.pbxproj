@@ -33,6 +33,10 @@
 		554224AC1E701722003498C6 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554224AB1E701722003498C6 /* StatisticsViewController.swift */; };
 		554224AE1E701925003498C6 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554224AD1E701925003498C6 /* NoticeViewController.swift */; };
 		554224B01E701C6D003498C6 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554224AF1E701C6D003498C6 /* AccountViewController.swift */; };
+		55BDC46E1E7658B700FFDA24 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55BDC46D1E7658B700FFDA24 /* SafariServices.framework */; };
+		55BDC4701E7658C200FFDA24 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55BDC46F1E7658C200FFDA24 /* Contacts.framework */; };
+		55BDC4731E765F5A00FFDA24 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55BDC4711E765F5A00FFDA24 /* FacebookSDK.framework */; };
+		55BDC4741E765F5A00FFDA24 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55BDC4721E765F5A00FFDA24 /* ParseFacebookUtils.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +70,10 @@
 		554224AB1E701722003498C6 /* StatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 		554224AD1E701925003498C6 /* NoticeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
 		554224AF1E701C6D003498C6 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		55BDC46D1E7658B700FFDA24 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		55BDC46F1E7658C200FFDA24 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		55BDC4711E765F5A00FFDA24 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = "../../../Downloads/Setravo-master/mais/FacebookSDK/FacebookSDK.framework"; sourceTree = "<group>"; };
+		55BDC4721E765F5A00FFDA24 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "../../../Downloads/Setravo-master/mais/FacebookSDK/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55BDC4731E765F5A00FFDA24 /* FacebookSDK.framework in Frameworks */,
+				55BDC4741E765F5A00FFDA24 /* ParseFacebookUtils.framework in Frameworks */,
+				55BDC4701E7658C200FFDA24 /* Contacts.framework in Frameworks */,
+				55BDC46E1E7658B700FFDA24 /* SafariServices.framework in Frameworks */,
 				55065BA81E723D4200F3355A /* libsqlite3.tbd in Frameworks */,
 				55065BA71E723D3900F3355A /* libz.tbd in Frameworks */,
 				55065BA61E723BE700F3355A /* SystemConfiguration.framework in Frameworks */,
@@ -95,6 +107,10 @@
 		5506585D1E72388900F3355A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				55BDC4711E765F5A00FFDA24 /* FacebookSDK.framework */,
+				55BDC4721E765F5A00FFDA24 /* ParseFacebookUtils.framework */,
+				55BDC46F1E7658C200FFDA24 /* Contacts.framework */,
+				55BDC46D1E7658B700FFDA24 /* SafariServices.framework */,
 				55065BA51E723BE700F3355A /* SystemConfiguration.framework */,
 				55065BA31E723BD900F3355A /* StoreKit.framework */,
 				55065BA11E723BCA00F3355A /* Security.framework */,
