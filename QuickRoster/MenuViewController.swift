@@ -11,8 +11,10 @@ import UIKit
 
 class MenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var menuNames: Array = [String]() //array of the side bar menu names
-    var iconImgs: Array = [UIImage]() //array of images that are displayed  for each option on the side bar
+    var menuNames: [String] = []//array of the side bar menu names
+    var iconImgs: [UIImage] = []
+    
+    var img : UIImage = UIImage(named: "home")!
     
     
     
@@ -20,7 +22,13 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         menuNames = ["Home","Shifts", "Staff", "Statistics", "Notices", "Account", "Logout"]
-        iconImgs = [UIImage(named: "home")!, UIImage(named: "shifts")!, UIImage(named: "staff")!, UIImage(named: "stats")!, UIImage(named: "notices")!, UIImage(named: "account")!, UIImage(named: "logout")!]
+        img = UIImage(named: "home")!
+        
+        let imgNames = ["home","shifts", "staff", "stats", "notices", "account", "logout"]
+        
+        for s in imgNames{
+            iconImgs.append(UIImage(named: s)!);
+        }
     }
     
     
