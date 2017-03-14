@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // Initialize Parse.
+        let configuration = ParseClientConfiguration {
+            $0.applicationId = "HU35CHA4t0ebOb7AwQR3l8XmqE82oKC8QfoHu2Ed"
+            $0.clientKey = "N84KATdzjuYIln0zKB1k3dDpcrl0Ev0BxRJSDtf1"
+            $0.server = "https://parseapi.back4app.com"
+        }
+        Parse.initialize(with: configuration)
+        /*let testObject = PFObject(className: "TestObject1")
+        testObject["foo"] = "bar"
+        testObject.saveInBackground();*/
         return true
     }
 
@@ -41,14 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
-    func applicationDidFinishLaunching(_ application: UIApplication) {
-        Parse.setApplicationId("HU35CHA4t0ebOb7AwQR3l8XmqE82oKC8QfoHu2Ed", clientKey: "N84KATdzjuYIln0zKB1k3dDpcrl0Ev0BxRJSDtf1")
-        
-        let object = PFObject(className: "TestClass")
-        object.add("Banana", forKey: "favoriteFood")
-        object.add("Chocolate", forKey: "favoriteIceCream")
-        object.saveInBackground()
-    }
+
 
 }
 
