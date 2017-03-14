@@ -7,21 +7,22 @@
 //
 
 import Foundation
-
 import UIKit
 
 class MenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var menuNames: Array = [String]() //array of the side bar menu names
-    var iconImg: Array = [UIImage]() //array of images that are displayed  for each option on the side bar
-    
-    
+    var menuNames: [String] = [] // Array of the side bar menu names
+    var iconImgs: [UIImage] = [] // Array of the side bar menu icons
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // Set menu items
         menuNames = ["Home","Shifts", "Staff", "Statistics", "Notices", "Account", "Logout"]
-        //iconImg = [UIImage(named: "home")!, UIImage(named: "imageName2")!] //no images have been imported yet
+        let imgNames = ["home","shifts", "staff", "stats", "notices", "account", "logout"]
+        for s in imgNames{
+            iconImgs.append(UIImage(named: s)!);
+        }
     }
     
     
@@ -36,6 +37,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell") as! MenuTableViewCell
         cell.menuLabel.text! = menuNames[indexPath.row]
+        cell.imgIcon.image = iconImgs[indexPath.row]
         //do that same for the images just .image and UIImage
         return cell
     }

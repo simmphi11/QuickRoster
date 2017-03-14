@@ -8,16 +8,20 @@
 
 import Foundation
 import UIKit
+import EventKit
+import EventKitUI
 
 class ShiftViewController: UIViewController {
     
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
        menuButton.target = revealViewController()
        menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+    
     }
     
     override func didReceiveMemoryWarning() {
