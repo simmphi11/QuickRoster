@@ -11,6 +11,7 @@ import UIKit
 
 class StaffViewController: UIViewController {
     
+    @IBOutlet weak var label: UILabel!
     @IBOutlet weak var menuButton: UIBarButtonItem!
    
     override func viewDidLoad() {
@@ -18,6 +19,7 @@ class StaffViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         menuButton.target = revealViewController()
         menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+        self.label.text = "Phillips a gay cunt"
     }
     
     override func didReceiveMemoryWarning() {
